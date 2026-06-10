@@ -175,15 +175,25 @@
     width: 250px;
 } */
 .slider-img-1{
-    background-image: url('..//images/project/side view.jpg') !important;
+    background-image: url('..//images/project/hero1.png') !important;
     margin-top: 70px;
 }
 .slider-img-2{
-    background-image: url('..//images/project/VASANTH NAGAR.jpeg') !important;
+    background-image: url('..//images/project/hero2.png') !important;
     margin-top: 70px;
 }
 .slider-img-3{
-    background-image: url('..//images/project/Front View.jpeg') !important;
+    background-image: url('..//images/project/hero3.jpeg') !important;
+    margin-top: 70px;
+}
+
+.slider-img-4{
+    background-image: url('..//images/project/hero4.png') !important;
+    margin-top: 70px;
+}
+
+.slider-img-5{
+    background-image: url('..//images/project/hero5.png') !important;
     margin-top: 70px;
 }
 .get-quote-btn .btn:hover{

@@ -1,0 +1,25 @@
+
+/*=============================================
+=            11. Animate Css            =
+=============================================*/
+
+.about-us-bg-02{
+     background: url("../images/banners/about-img-2.jpg");
+}
+
+.full-width-row {
+     display: flex;
+     @media #{$tablet-device}{
+          flex-direction: column;
+     }
+     @media #{$large-mobile}{
+          flex-direction: column;
+     }
+}
+
+.elementor-col-50 {
+     width: 50%;
+     @media #{$tablet-device,$large-mobile}{
+          width: 100%;
+     }
+}

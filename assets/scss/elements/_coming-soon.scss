@@ -1,0 +1,98 @@
+/*=============================================
+=            31. Coming Soon Css           =
+==============================================*/
+
+.coming-soon-page-wrapper {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     @media #{$large-mobile,$tablet-device}{
+          height: 100%;
+     }
+}
+.bg-yollo {
+     background: #fcd54f;
+}
+
+
+
+.counter-coming-soon {
+     display: flex;
+     justify-content: flex-start;
+     .single-countdown {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-right: 30px;
+          &__time {
+               font-size: 36px;
+               line-height: 1em;
+               font-weight: 600;
+          }
+          &__text {
+               font-size: 16px;
+          }
+          @media #{$tablet-device}{
+               margin-right: 30px;
+          }
+          @media #{$desktop-device}{
+               margin-right: 30px;
+          }
+          @media #{$large-mobile}{
+               margin-right: 30px;
+          }
+          @media #{$small-mobile}{
+               margin-right: 20px;
+               &__time {
+                    font-size: 20px;
+               }
+          }
+     }
+     &.timer-white {
+          color: #fff;
+     }
+}
+.newsletter-box-coming-soon {
+     position: relative;
+     input {
+        border: none;
+        border-bottom: 2px solid #111;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #111;
+        position: relative;
+        padding: 10px 100px 10px 0;
+        background: transparent;
+        &:focus {
+             border-color: #111;
+             color: #111;
+        }
+     }  
+     .submit-newsletter-btn {
+          border: none;
+          background: transparent;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 16px;
+          background-color: rgba(0,0,0,0);
+          color: #212121;
+          padding: 15px 0 13px; 
+          font-weight: 700;
+     }
+     &--white {
+          input {
+               border-bottom: 2px solid #fff;
+               color: #fff;
+               &:focus {
+                    border-color: #fff;
+                    color: #fff;
+               }
+          }  
+          .submit-newsletter-btn {
+               color: #fff;
+          }
+     }
+}

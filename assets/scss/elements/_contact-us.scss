@@ -1,0 +1,169 @@
+/*=========================================
+=          15. Contact Form Css            =
+===========================================*/
+
+.contact-form {
+    &__two {
+        input[type="text"], input[type="email"], textarea {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            padding: 8px 0;
+            margin-bottom: 30px;
+            background: transparent;
+            color: $white;
+        }
+        textarea {
+            height: 200px;
+        }
+        &--white {
+            input[type="text"], input[type="email"], textarea {
+                border: none;
+                border-bottom: 2px solid #333;
+                width: 100%;
+                padding: 8px 0;
+                margin-bottom: 30px;
+                background: transparent;
+                color: #111;
+            }
+            textarea {
+                height: 150px;
+                @media #{$tablet-device}{
+                    height: 100px;
+                }
+            }
+        }
+        &--black {
+            input[type="text"], input[type="email"], textarea {
+                border: none;
+                border-bottom: 2px solid #fff;
+                width: 100%;
+                padding: 8px 0;
+                margin-bottom: 30px;
+                background: transparent;
+                color: #fff;
+            }
+            textarea {
+                height: 150px;
+                @media #{$tablet-device}{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+.contact-form {
+    &__three {
+        input[type="text"], input[type="email"], textarea {
+            border: none;
+            border-bottom: none;
+            background-color: #eaeaea;
+            color: #212121;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 30px;
+            margin: 0 0 30px;
+            border-style: solid;
+            border-width: 0;
+            width: 100%;
+        }
+        textarea {
+            height: 260px;
+            &.height-140 {
+                height: 140px;
+            }
+        }
+        .contact-btn-three {
+            background: #111;
+            color: #ffffff;
+            border: none;
+            padding: 15px 60px;
+            margin-top: -70px;
+            position: absolute;
+            right: 15px;
+            font-weight: 600;
+        }
+
+
+    }
+}
+
+
+
+.single-contact-info__one {
+    text-align: center;
+    margin-top: 30px;
+    .icon {
+        font-size: 55px;
+        color: #212121;
+        margin-bottom: 20px;
+    }
+    & h6 {
+        font-weight: 600;
+    }
+}
+
+
+.quick-start-content {
+    justify-content: space-between;
+    @media #{$large-mobile}{
+        flex-direction: column;
+        .button-box {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.contact-wrap-box {
+    padding: 100px;
+    background: #fff;
+    @media #{$tablet-device}{
+        padding: 30px;
+    }
+    
+    @media #{$large-mobile}{
+        padding: 30px;
+    }
+
+    .contact-form__two input[type="text"], .contact-form__two input[type="email"], .contact-form__two textarea {
+        border-bottom: 1px solid #333;
+        color: #333;
+        &::placeholder {
+            color: $white;
+        }
+    }
+    .submit-btn-transparent {
+        background: transparent;
+        font-weight: 600;
+        font-size: 25px;
+        border: none;
+    }
+    
+}
+
+.single-asking-wrap {
+    margin-bottom: 40px;
+    .content {
+        a {
+            color: $theme-color--default;
+        }
+    }
+}
+
+
+.googleMap-1 {
+    height: 800px;
+    @media #{$large-mobile,$tablet-device}{
+        height: 400px;
+    }
+}
+
+.googleMap-2, .googleMap-3, .googleMap-4 {
+    height: 400px;
+    @media #{$large-mobile,$tablet-device}{
+        height: 300px;
+    }
+}
+
+

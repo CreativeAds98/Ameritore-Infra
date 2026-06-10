@@ -1,0 +1,194 @@
+
+/*=========================================
+=               13. Footer Css            =
+===========================================*/
+
+.align-tems-style {
+    .footer-widget {
+        &:first-child,
+        &:last-child {
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
+.footer-widget__logo {
+    max-width: 220px;
+}
+
+.reveal-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+    @media #{ $tablet-device, $large-mobile}{
+        position: static;
+    }
+}
+
+.footer-widget-wrapper{
+    margin-bottom: -35px;
+}
+.footer-widget{
+    margin-bottom: 30px;
+    &__title{
+        margin-top: -3px;
+        color: $theme-color--black;
+    }
+
+    &__list{
+        li{
+            margin-bottom: 25px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            & .image_btn {
+                border-radius: 5px;
+                box-shadow: 0 0 20px rgba(51,51,51,.1);
+                overflow: hidden;
+            }
+        }
+        &-real_estate {
+            margin-left: 70px;
+            @media #{$laptop-device,$desktop-device} {
+                margin-left: 0;
+            }
+            @media #{$tablet-device} {
+                margin-left: 0;
+            }
+            @media #{$large-mobile} {
+                margin-left: 0;
+            }
+            li{
+                margin-bottom: 15px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                & .image_btn {
+                    border-radius: 5px;
+                    box-shadow: 0 0 20px rgba(51,51,51,.1);
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+.footer-newsletter {
+    position: relative;
+    &::before {
+        content: "\ea02";
+        font-family: 'LaStudioIcons';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        font-size: 24px;
+        line-height: 20px;
+        margin-top: -10px;
+        height: 20px;
+        width: 20px;
+        color: $white;
+    }
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        position: relative;
+        padding: 10px 100px 10px 30px;
+        &:focus {
+            border-bottom: 1px solid #ddd;
+            color: #fff;
+        }
+        
+    }
+    button {
+        position: absolute;
+        right: 0;
+        background: transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        color: $white;
+        font-weight: 600;
+        &:hover {
+            color: $theme-color--default;
+        }
+    }
+}
+
+
+.footer-menu {
+    ul {
+        li {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            margin: 0 15px;
+            a {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.footer-social {
+    &-white {
+        li {
+            color: $white;
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+    }
+    &-black {
+        li {
+            color: $black;
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+.social-group__list {
+    & .ht-social-networks.tilte-style  {
+        .link-text {
+            color: #CCCCCC;
+            &::before {
+                background: rgba(255,255,255,0.2);
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+        & .social-link {
+            &::before {
+                color: #ccc;
+            }
+        }
+    }
+}
+.copyright-text{
+    display: inline-block;
+    font-size: 14px;
+    @media #{$large-mobile}{
+        margin-bottom: 15px;
+    }
+}
+.copyright-text-two {
+    font-size: 14px;
+}
+
+/*=====  End of footer ======*/

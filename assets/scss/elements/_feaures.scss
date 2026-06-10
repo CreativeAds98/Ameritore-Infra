@@ -1,0 +1,84 @@
+
+/*=========================================
+=          17. Feaures Css            =
+===========================================*/
+
+.single-feaures {
+     &--one {
+          margin-bottom: 40px;
+          & .feaures-title {
+               font-weight: 700;
+               text-transform: uppercase;
+               font-size: 20px;
+               margin-bottom: 20px;
+          }
+     }
+     &--two {
+          background: #212121;
+          margin-bottom: 30px;
+          padding: 40px 30px 80px;
+          .feaures-icon {
+               img {
+                    width: 90px;
+               }
+               margin-bottom: 30px;
+          }
+          & .feaures-title {
+               font-weight: 700;
+               text-transform: uppercase;
+               font-size: 20px;
+               padding-bottom: 25px;
+               margin-bottom: 25px;
+               position: relative;
+               &::after {
+                    position: absolute;
+                    content: '';
+                    left: 50%;
+                    bottom: 0;
+                    height: 4px;
+                    width: 60px;
+                    background: #fff;
+                    transform: translateX(-50%);
+               }
+          }
+          p {
+               font-size: 18px;
+          }
+     }
+     &--three {
+          .feaures-icon {
+               font-size: 90px;    line-height: 1;
+               margin-bottom: 12px;
+          }
+          .feaures-content {
+               .service-title {
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    font-size: 26px;
+               }
+               p {
+                    font-size: 22px;
+               }
+          }
+     }
+     &--four {
+          margin-top: 60px;
+          .feaures-icon {
+               margin-bottom: 30px;
+          }
+          .feaures-content {
+               p {
+                    font-size: 18px;
+               }
+          }
+          @media #{$tablet-device}{
+               margin-top: 40px;
+          }
+     }
+}
+
+
+
+
+
+

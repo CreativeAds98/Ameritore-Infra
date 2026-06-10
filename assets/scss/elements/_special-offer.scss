@@ -1,0 +1,68 @@
+
+/*=========================================
+=       26. Special Offer Area Css          =
+===========================================*/
+
+.special-offer-area {
+     background: #e3e6e4;
+}
+.countdown-area {
+     @media #{$large-mobile,$tablet-device}{
+          margin-top: 30px;
+     }
+}
+
+.counter-style {
+     &--one {
+          display: flex;
+          justify-content: center;
+          .single-countdown {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               padding: 40px;
+               &__time {
+                    font-size: 46px;
+                    line-height: 1em;
+               }
+               &__text {
+                    font-size: 16px;
+               }
+               @media #{$tablet-device}{
+                    padding: 30px;
+               }
+               @media #{$desktop-device}{
+                    padding: 30px;
+               }
+               @media #{$large-mobile}{
+                    padding: 30px;
+               }
+               @media #{$small-mobile}{
+                    padding: 10px;
+                    &__time {
+                         font-size: 20px;
+                    }
+               }
+          }
+     }
+}
+
+.spacel-prodect-price {
+     .old-price {
+          color: #212121;
+          font-size: 24px;
+          text-decoration: line-through;
+          line-height: 1.2em;
+          text-align: center;
+          display: block;
+     }
+     .new-price {
+          color: #212121;
+          font-size: 36px;
+          font-weight: 700;
+          font-style: italic;
+          line-height: 1.2em;
+          text-align: center;
+          display: block;
+     }
+}

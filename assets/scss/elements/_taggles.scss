@@ -1,0 +1,164 @@
+
+/*=================================
+=        34. Toggle Style Css
+===================================*/
+.toggle_style--1 .card {
+  border: 0 none;
+  margin-bottom: 7px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 0;
+  background: transparent;
+}
+
+.toggle_style--1 .card-header {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border: 0 none;
+}
+
+.toggle_style--1 .card-header h5 a.acc-btn {
+  color: #535353;
+  font-weight: 700;
+  line-height: 1;
+  border: 0 none;
+  -webkit-appearance: none;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 15px;
+}
+
+.toggle_style--1 .card-header h5 a.acc-btn::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "\f0da";
+  left: 0;
+  font-size: 14px;
+  font-family: FontAwesome;
+  width: 1em;
+}
+
+.toggle_style--1 .card-header h5 a.acc-btn[aria-expanded="true"] {
+  background: transparent;
+  color: #f53e6a;
+}
+
+.toggle_style--1 .card-header h5 a.acc-btn[aria-expanded="true"]::before {
+  content: "\f0d8";
+}
+
+.toggle_style--1 .card-body {
+  padding: 15px;
+  color: #535353;
+  font-size: 14px;
+  line-height: 1.714286;
+  font-weight: 400;
+}
+
+.toggle_style--1.toggle-icon .card-header h5 a.acc-btn::before {
+  content: "\f152";
+}
+
+.toggle_style--1.toggle-icon .card-header h5 a.acc-btn[aria-expanded="true"]::before {
+  content: "\f150";
+}
+
+.toggle_style--1.space-between .card {
+  border-bottom: 1px solid #f53e6a;
+}
+
+.toggle_style--1.space-between .card-header h5 a.acc-btn {
+  padding-left: 23px;
+}
+
+.toggle_style--1.space-between .card-header h5 a.acc-btn::before {
+  content: "\ecdd";
+  font-family: 'dliconoutline';
+}
+
+.toggle_style--1.space-between .card-header h5 a.acc-btn[aria-expanded="true"]::before {
+  content: "\ecde";
+}
+
+.toggle_style--1.icon-right .card {
+  border-bottom: 1px solid #f53e6a;
+}
+
+.toggle_style--1.icon-right .card-header h5 a.acc-btn::before {
+  left: auto;
+  right: 0;
+}
+
+.toggle_style--2 .card {
+  border: 0 none;
+  margin-bottom: 20px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border: 1px solid #d4d4d4;
+  border-radius: 0;
+  background: transparent;
+}
+
+.toggle_style--2 .card-header {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border: 0 none;
+}
+
+.toggle_style--2 .card-header h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+.toggle_style--2 .card-header h5 a.acc-btn {
+  color: #2f2f2f;
+  font-weight: 400;
+  line-height: 1;
+  border: 0 none;
+  -webkit-appearance: none;
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 30px;
+  margin-left: 10px;
+}
+
+.toggle_style--2 .card-header h5 a.acc-btn::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "\eac2";
+  left: 6px;
+  font-size: 18px;
+  font-family: 'dliconoutline';
+  width: 1em;
+}
+
+.toggle_style--2 .card-header h5 a.acc-btn[aria-expanded="true"] {
+  background: transparent;
+  color: #f53e6a;
+}
+
+.toggle_style--2 .card-header h5 a.acc-btn[aria-expanded="true"]::before {
+  content: "\eac5";
+}
+
+.toggle_style--2 .card-body {
+  background-color: #fff;
+  color: #2f2f2f;
+  padding: 10px 30px 30px;
+  font-size: 16px;
+  line-height: 2.25;
+}
+
+.tab-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}

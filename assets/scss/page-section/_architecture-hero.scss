@@ -1,0 +1,780 @@
+/*======================================================
+=           39. Architecture hero Slider Css           =
+======================================================*/
+
+.single-hero-slider-one {
+    height: 700px;
+    display: flex !important;
+    align-items: center;
+    background-size: cover;
+    @media #{$desktop-device} {
+        height: 620px;
+    }
+    @media #{$tablet-device} {
+        height: 520px;
+    }
+    @media #{$large-mobile} {
+        height: 420px;
+    }
+    & h1 {
+        font-size: 87px;
+        @media #{$desktop-device} {
+            font-size: 60px;
+        }
+        @media #{$tablet-device} {
+            font-size: 50px;
+        }
+        @media #{$large-mobile} {
+            font-size: 30px;
+        }
+    }
+    a {
+        margin-top: 30px;
+        font-size: 16px;
+        & i {
+            height: 46px;
+            width: 46px;
+            line-height: 43px;
+            text-align: center;
+            background: transparent;
+            border: 1px solid #ddd;
+            border-radius: 5000px;
+            margin-left: 10px;
+        }
+        &:hover {
+            i {
+                background: $theme-color--default;
+                border: 1px solid $theme-color--default;
+                color: $white;
+            }
+        }
+    }
+}
+
+.hreo-slider-one {
+    .slick-dots {
+        right: 60px;
+        position: absolute;
+        bottom: 60px;
+        @media #{$large-mobile} {
+            bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            button {
+                background: transparent;
+                border: none;
+                font-weight: 600;
+                color: $white;
+                position: relative;
+                font-size: 20px;
+                &::after {
+                    position: absolute;
+                    left: 5px;
+                    bottom: 0;
+                    width: 0px;
+                    height: 4px;
+                    background: #fff;
+                    content: '';
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &.slick-active {
+                button {
+                    &::after {
+                        opacity: 1;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Hero Slider Area
+.single-hero-slider-two {
+    height: 700px;
+    display: flex !important;
+    align-items: center;
+    background-size: cover;
+    @media #{$desktop-device} {
+        height: 620px;
+    }
+    @media #{$tablet-device} {
+        height: 520px;
+    }
+    @media #{$large-mobile} {
+        height: 440px;
+    }
+    & h1 {
+        font-size: 87px;
+        @media #{$desktop-device} {
+            font-size: 60px;
+        }
+        @media #{$tablet-device} {
+            font-size: 50px;
+        }
+        @media #{$large-mobile} {
+            font-size: 30px;
+        }
+    }
+    a {
+        margin-top: 30px;
+        font-size: 16px;
+        & i {
+            height: 46px;
+            width: 46px;
+            line-height: 43px;
+            text-align: center;
+            background: transparent;
+            border: 1px solid #ddd;
+            border-radius: 5000px;
+            margin-left: 10px;
+        }
+        &:hover {
+            i {
+                background: $theme-color--default;
+                border: 1px solid $theme-color--default;
+                ;
+            }
+        }
+    }
+}
+
+.hero-slider-content_03 {
+    & h1 {
+        font-size: 62px;
+        @media #{$desktop-device} {
+            font-size: 50px;
+        }
+        @media #{$tablet-device} {
+            font-size: 50px;
+        }
+        @media #{$large-mobile} {
+            font-size: 30px;
+        }
+    }
+    .hero-arrow-button {
+        a {
+            margin-top: 30px;
+            color: #fff;
+            .hero-icon {
+                font-size: 80px;
+                &:hover {
+                    color: $theme-color--default;
+                }
+                @media #{$tablet-device} {
+                    font-size: 50px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-content_05 {
+    & h1 {
+        font-size: 79px;
+        @media #{$desktop-device} {
+            font-size: 50px;
+        }
+        @media #{$tablet-device} {
+            font-size: 50px;
+        }
+        @media #{$large-mobile} {
+            font-size: 30px;
+        }
+    }
+}
+
+.single-hero-slider-14 {
+    height: 700px;
+    display: flex !important;
+    align-items: center;
+    background-size: cover;
+    @media #{$large-mobile,$tablet-device} {
+        height: auto;
+        padding: 50px 0 70px;
+    }
+    .hero-slider-content {
+        @media #{$large-mobile,$tablet-device} {
+            margin-top: 30px;
+        }
+        h1 {
+            font-size: 119px;
+            line-height: 1;
+            @media #{$tablet-device} {
+                font-size: 70px;
+            }
+            @media #{$large-mobile} {
+                font-size: 60px;
+            }
+        }
+        .hreo-price {
+            font-size: 36px;
+            font-weight: 400;
+            & .old-price {
+                font-size: 19px;
+                line-height: 24px;
+            }
+        }
+        .hero-btn {
+            background: $theme-color--four;
+            color: $white;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover {
+                background: #111;
+            }
+            @media #{$tablet-device,$large-mobile} {
+                &.btn--lg {
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-two,
+.hero-slider-12-active,
+.hero-slider-14-active {
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            margin: 0 5px;
+            width: 20px;
+            display: inline-block;
+            button {
+                background: transparent;
+                border: none;
+                font-weight: 600;
+                color: $white;
+                position: relative;
+                font-size: 0px;
+                height: 12px;
+                width: 12px;
+                background: rgba(225, 225, 225, 0.4);
+                border-radius: 5000px;
+                margin: 5px;
+                padding: 0;
+                transition: all 0.4s ease-in-out;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: -5px;
+                    top: -5px;
+                    height: 18px;
+                    width: 18px;
+                    border: 2px solid transparent;
+                    border-radius: 50000px;
+                    transition: all .4s ease-in-out;
+                    opacity: 0;
+                }
+            }
+            &.slick-active {
+                button {
+                    height: 8px;
+                    width: 8px;
+                    background: rgba(225, 225, 225, 225);
+                    &::after {
+                        border: 2px solid #ddd;
+                        opacity: 1;
+                    }
+                }
+            }
+            &:hover {
+                button {
+                    height: 8px;
+                    width: 8px;
+                    background: rgba(225, 225, 225, 225);
+                    &::after {
+                        border: 2px solid #ddd;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-14-active {
+    .slick-dots {
+        li {
+            button {
+                background: $theme-color--four;
+            }
+            &.slick-active {
+                button {
+                    height: 8px;
+                    width: 8px;
+                    background: $theme-color--four;
+                    ;
+                    &::after {
+                        border: 2px solid $theme-color--four;
+                        opacity: 1;
+                    }
+                }
+            }
+            &:hover {
+                button {
+                    height: 8px;
+                    width: 8px;
+                    background: $theme-color--four;
+                    &::after {
+                        border: 2px solid $theme-color--four;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-three {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    .hero-item-left {
+        width: 30%;
+        @media #{$tablet-device} {
+            width: 15%;
+        }
+        @media #{$large-mobile} {
+            display: none;
+        }
+        .hreo-social-content {
+            width: 300px;
+            max-width: 300px;
+            margin-left: -90px;
+            transform: rotate(-90deg) translateX(50%);
+            bottom: calc(50% + 100px);
+            .hreo-social-list {
+                display: flex;
+                align-items: center;
+                li {
+                    margin-right: calc(40px/2);
+                    margin-left: calc(40px/2);
+                }
+            }
+        }
+    }
+    .hero-item-right {
+        width: 70%;
+        @media #{$tablet-device} {
+            width: 85%;
+        }
+        @media #{$large-mobile} {
+            width: 100%;
+        }
+    }
+    .hero-slider-four {
+        position: relative;
+    }
+    .single-right-item {
+        position: relative;
+        height: 600px;
+        @media #{$large-mobile} {
+            height: 400px;
+            background-size: cover;
+        }
+        .inner-content {
+            position: absolute;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            bottom: 0;
+            right: 0;
+            min-width: 780px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(249, 249, 249);
+            margin: 0px;
+            padding: 0px;
+            min-height: 87px;
+            padding-left: 50px;
+            @media #{$laptop-device} {
+                min-width: 75%;
+            }
+            @media #{$desktop-device} {
+                min-width: 75%;
+            }
+            @media #{$tablet-device} {
+                min-width: 580px;
+            }
+            @media #{$large-mobile} {
+                min-width: 100%;
+                width: 100%;
+            }
+            .text-content {
+                position: relative;
+                padding-left: 30px;
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: $theme-color--default;
+                    content: '';
+                    height: 40px;
+                    width: 4px;
+                }
+            }
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                letter-spacing: 2px;
+                margin-bottom: 3px;
+            }
+            p {
+                font-size: 10px;
+                color: #111;
+            }
+        }
+    }
+}
+
+.hero-slider-four {
+    .slick-dots {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        li {
+            margin: 0 3px;
+            width: 20px;
+            display: inline-block;
+            button {
+                background: transparent;
+                border: none;
+                font-weight: 600;
+                color: $white;
+                position: relative;
+                font-size: 0px;
+                height: 12px;
+                width: 12px;
+                background: rgba(225, 225, 225, 0.4);
+                border-radius: 5000px;
+                margin: 5px;
+                padding: 0;
+                transition: all 0.4s ease-in-out;
+            }
+            &.slick-active,
+            &:hover {
+                button {
+                    background: $theme-color--default;
+                }
+            }
+        }
+    }
+}
+
+.hero-testimonial-inner-box {
+    margin-top: -350px;
+    background: $theme-color--default;
+    padding: 140px 50px 60px 50px;
+    position: relative;
+    @media #{$tablet-device} {
+        margin-top: 0px;
+    }
+    @media #{$large-mobile} {
+        margin-top: 0px;
+        padding: 140px 20px 60px 20px;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: 80px;
+        top: 50px;
+        height: 110px;
+        width: 110px;
+        background: url(../images/icons/m4-quote.png);
+        background-repeat: no-repeat;
+        background-size: 80px auto;
+    }
+    p {
+        font-family: $font-family-three;
+        font-size: 26px;
+        color: $white;
+        @media #{$desktop-device} {
+            font-size: 22px;
+        }
+        @media #{$large-mobile} {
+            font-size: 20px;
+        }
+    }
+    h6 {
+        font-weight: 600;
+    }
+}
+
+.hero-slider-six-wrap {
+    .hero-six-text {
+        padding: 0 20px;
+        @media #{$large-mobile,$tablet-device} {
+            margin-top: 60px;
+            margin-bottom: 40px;
+            br {
+                display: none;
+            }
+        }
+    }
+    .single-hero-slider-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .hero-btn-six {
+        font-weight: 700;
+        position: relative;
+        color: #111;
+        letter-spacing: 0px;
+        font-size: 14px;
+        padding-top: 3px;
+        &:before {
+            background: $theme-color--default;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+        }
+        &:hover {
+            color: $theme-color--default;
+            &:before {
+                background: #111;
+            }
+        }
+    }
+}
+
+.hero-slider-six {
+    .slick-arrow {
+        position: absolute;
+        left: -120px;
+        bottom: 50px;
+        background: transparent;
+        border: none;
+        color: #111;
+        font-size: 30px;
+        width: auto;
+        &.slick-prev {}
+        &.slick-next {
+            left: -70px;
+        }
+    }
+}
+
+.hero-7-project-wrap {
+    @media #{$tablet-device,$large-mobile} {
+        margin-top: 50px;
+    }
+    .col-lg-6 {
+        &:nth-child(2) {
+            .single-project--three {
+                margin-bottom: 70px;
+                @media #{$laptop-device} {
+                    margin-bottom: 55px;
+                }
+                @media #{$desktop-device} {
+                    margin-bottom: 50px;
+                }
+                @media #{$tablet-device,$large-mobile} {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &:nth-child(1) {
+            .single-project--three {
+                @media #{$tablet-device,$large-mobile} {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.single-hero-slider-nine {
+    height: 800px;
+    display: flex !important;
+    align-items: center;
+    background-size: cover;
+    & h1 {
+        font-size: 87px;
+        line-height: 1.2;
+    }
+    @media #{$laptop-device} {
+        height: 680px;
+        h1 {
+            font-size: 75px;
+        }
+    }
+    @media #{$desktop-device} {
+        height: 650px;
+        h1 {
+            font-size: 68px;
+        }
+    }
+    @media #{$tablet-device} {
+        height: 520px;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    @media #{$large-mobile} {
+        height: 420px;
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+.hero-slider-9 {
+    .slick-arrow {
+        position: absolute;
+        align-items: center;
+        transition: all .2s;
+        border: none;
+        top: 50%;
+        background: transparent;
+        color: #fff;
+        left: 15px;
+        right: auto;
+        transform: translateY(-50%);
+        font-size: 30px;
+        z-index: 9;
+        &.slick-next {
+            right: 15px;
+            left: auto;
+        }
+        &:hover {
+            color: #fff;
+        }
+    }
+    .slick-slide {
+        opacity: 0.5;
+        &.slick-current {
+            opacity: 1;
+        }
+    }
+}
+
+.hero-btn-white {
+    background: $white;
+    color: #222;
+    min-width: 210px;
+    max-width: 210px;
+    height: 70px;
+    border-radius: 40px;
+    line-height: 70px;
+    font-weight: 600;
+    font-family: $font-family-four;
+    text-transform: uppercase;
+    &:hover {
+        background: #222;
+        color: #fff;
+    }
+    @media #{$tablet-device} {
+        min-width: 180px;
+        height: 50px;
+        line-height: 51px;
+        font-size: 12px;
+    }
+    @media #{$large-mobile} {
+        min-width: 170px;
+        height: 50px;
+        line-height: 51px;
+        font-size: 12px;
+    }
+}
+
+.single-hero-slider-12 {
+    position: relative;
+}
+
+.single-hero-slider-12-wrap {
+    background: #222;
+    padding-left: 450px;
+    @media #{$desktop-device} {
+        padding-left: 250px;
+    }
+    @media #{$tablet-device} {
+        padding-left: 250px;
+    }
+    @media #{$large-mobile} {
+        padding-left: 150px;
+    }
+}
+
+.single-hero-slider-12 {
+    height: 800px;
+    @media #{$desktop-device} {
+        height: 700px;
+    }
+    @media #{$tablet-device} {
+        height: 600px;
+    }
+    @media #{$large-mobile} {
+        height: 540px;
+    }
+}
+
+.slider-12-text-content {
+    position: absolute;
+    z-index: 999;
+    bottom: 150px;
+    @media #{$tablet-device} {
+        bottom: 100px;
+    }
+    @media #{$large-mobile} {
+        bottom: 80px;
+    }
+    .hero-slider-content-12 {
+        @media #{$tablet-device} {
+            & h1 {
+                font-size: 32px;
+            }
+        }
+        @media #{$large-mobile} {
+            max-width: 477px;
+            & h1 {
+                font-size: 27px;
+            }
+        }
+        @media #{$small-mobile} {
+            max-width: 280px;
+            & h1 {
+                font-size: 27px;
+            }
+        }
+        & h1 {
+            font-size: 47px;
+        }
+        .hero-media {
+            li {
+                display: inline-block;
+                color: $white;
+                margin-right: 10px;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        .btn--white:hover {
+            background: $font-family-four;
+            color: #fff;
+        }
+    }
+}

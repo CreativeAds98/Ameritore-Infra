@@ -1,0 +1,407 @@
+/*========================================
+=	     05. Offcanvas Menu Wrapper        =
+==========================================*/
+
+.offcanvas-menu_wrapper {
+    .offcanvas-menu-inner {
+        padding: 60px 60px 0;
+        position: fixed;
+        top: 0;
+        right: -285px;
+        width: 470px;
+        height: 100%;
+        background: #212121;
+        z-index: 9999;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+        @media #{$large-mobile} {
+            width: 300px;
+            padding: 60px 20px 0;
+        }
+        .btn-close {
+            top: 45px;
+            left: 25px;
+            width: auto;
+            line-height: 1;
+            height: auto;
+            color: $white;
+            font-size: 30px;
+            display: block;
+            background: none;
+            &:hover {
+                background: transparent;
+            }
+        }
+        .offcanvas-inner_nav {
+            margin-top: 40px;
+            ul {
+                li {
+                    color: $white;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    .menu-50 {
+                        overflow: hidden;
+                        max-width: 340px;
+                        margin: auto;
+                        li {
+                            width: 50%;
+                            float: left;
+                            text-align: center;
+                            @media #{$large-mobile} {
+                                a {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .offcanvas-inner_banner {
+            padding-top: 40px;
+            .inner-img {
+                position: relative;
+                cursor: pointer;
+                width: 100%;
+                a {
+                    display: block;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    overflow: hidden;
+                }
+                &:before {
+                    background-color: $black;
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all 0.3s ease-in;
+                }
+                &:hover {
+                    &:before {
+                        width: calc(100% - 40px);
+                        height: calc(100% - 30px);
+                        top: 15px;
+                        left: 20px;
+                        opacity: 0.3;
+                    }
+                    .banner-add-content {
+                        transform: translateY(-10px);
+                    }
+                }
+                .banner-add-content {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 30px;
+                    transition: all 0.4s ease-in-out;
+                    h5 {
+                        color: $white;
+                    }
+                    p {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .offcanvas-inner_info {
+            padding-top: 35px;
+            >span {
+                display: block;
+                font-size: 14px;
+                color: $white;
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+            .social-link {
+                & li {
+                    display: inline-block;
+                    color: $white;
+                    margin-right: 20px;
+                }
+            }
+            .copyright {
+                padding: 20px 0 25px;
+                color: $white;
+                span {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    &.open {
+        .offcanvas-menu-inner {
+            left: auto;
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.fullscreen-menu {
+        .offcanvas-menu-inner {
+            background-color: rgba(0, 0, 0, .94);
+            width: 100%;
+            padding: 100px 0;
+            @media #{$large-mobile} {
+                padding: 40px 0;
+            }
+            .btn-close {
+                color: $white;
+                top: 0;
+                left: 0;
+                right: auto;
+                font-size: 40px;
+                text-align: right;
+                padding: 0 100px;
+                &:hover {
+                    color: $theme-color--default;
+                }
+                @media #{$large-mobile} {
+                    padding: 0 20px;
+                }
+            }
+            .offcanvas-inner_nav {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-top: 0;
+                >ul {
+                    max-height: 520px;
+                    overflow-y: none;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    >li {
+                        &.active {
+                            >a {
+                                color: $white;
+                            }
+                        }
+                        &:hover {
+                            >a {
+                                color: $white
+                            }
+                        }
+                        &.has-sub {
+                            >ul {
+                                display: none;
+                                >li {
+                                    &.inner-sub {
+                                        >a {
+                                            width: auto;
+                                            >i {
+                                                position: relative;
+                                                right: -5px;
+                                                vertical-align: middle;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >ul {
+                            >li {
+                                &:hover {
+                                    >a {
+                                        color: $white
+                                    }
+                                }
+                                a {
+                                    color: #919191;
+                                    font-size: 20px;
+                                    font-family: $font-family-three;
+                                    &:hover {
+                                        color: $white
+                                    }
+                                }
+                            }
+                        }
+                        >a {
+                            color: #919191;
+                            font-size: 46px;
+                            font-family: $font-family-three;
+                            font-weight: 700;
+                            >i {
+                                position: relative;
+                                vertical-align: middle;
+                                left: 10px;
+                                right: auto;
+                                font-size: 16px;
+                            }
+                            @media #{$large-mobile} {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.open {
+            .offcanvas-menu-inner {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/*======================================
+=        06. Offcanvas Minicart Area
+=======================================*/
+
+.offcanvas-minicart_wrapper {
+    .offcanvas-menu-inner {
+        padding: 60px !important;
+        width: 450px;
+        box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+        background-color: $white;
+        @media #{$laptop-device} {
+            width: 100%;
+            padding: 60px 15px !important;
+        }
+        .close-btn-box {
+            text-align: right;
+        }
+        .btn-close {
+            background: transparent;
+            color: #333;
+            top: 0;
+            right: 0;
+            left: auto;
+            text-align: right;
+            font-size: 30px;
+            &:hover {
+                color: #212121;
+            }
+        }
+        .minicart-content {
+            .minicart-heading {
+                >h4 {
+                    margin-bottom: 0;
+                    padding-bottom: 25px;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                }
+            }
+            .minicart-list {
+                max-height: 311px;
+                position: relative;
+                overflow: auto;
+                >li {
+                    padding-bottom: 30px;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                    &.minicart-product {
+                        display: flex;
+                        >a {
+                            &.product-item_remove {
+                                >i {
+                                    position: absolute;
+                                    font-size: 14px;
+                                    top: auto;
+                                    right: 15px;
+                                }
+                            }
+                        }
+                        .product-item_img {
+                            border: 1px solid #ddd;
+                            flex-basis: 70px;
+                            max-width: 70px;
+                        }
+                        .product-item_content {
+                            flex-basis: calc(100% - 70px);
+                            max-width: calc(100% - 70px);
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            a {
+                                &.product-item_title {
+                                    color: #333;
+                                    line-height: 1.4;
+                                    font-size: 14px;
+                                    width: 90%;
+                                    display: block;
+                                    &:hover {
+                                        color: #333;
+                                    }
+                                }
+                            }
+                            .product-item_quantity {
+                                display: block;
+                                padding-top: 10px;
+                                font-size: 13px;
+                                line-height: 24.7px;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .minicart-item_total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+        }
+        .minicart-btn_area {
+            padding-bottom: 15px;
+            .hiraola-btn {
+                height: 60px;
+                line-height: 60px;
+                color: $white !important;
+            }
+        }
+    }
+}
+
+
+/* ---Offcanvas--- */
+
+.offcanvas-minicart_wrapper {
+    .offcanvas-menu-inner {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -440px;
+        width: 440px;
+        height: 100%;
+        z-index: 9999;
+        visibility: hidden;
+        overflow-y: auto;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        .offcanvas-inner_logo {
+            padding: 30px 0;
+            text-align: center;
+        }
+        @media #{$large-mobile} {
+            width: 300px;
+            padding: 60px 20px 0 !important;
+        }
+    }
+    &.open {
+        .offcanvas-menu-inner {
+            visibility: visible;
+            left: auto;
+            right: 0;
+            opacity: 1;
+            z-index: 999;
+        }
+    }
+}

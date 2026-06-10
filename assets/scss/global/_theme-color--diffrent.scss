@@ -1,0 +1,242 @@
+
+/*========================================
+=	     08. Theme Color Css        =
+==========================================*/
+
+.theme-color {
+     &--five {
+          
+          .la-loader.spinner1, .la-loader.spinner2, .la-loader.spinner3 [class*="bounce"], .la-loader.spinner4 [class*="dot"], .la-loader.spinner5 div {
+          background-color: $theme-color--five;
+          }
+          .submenu > li.active > a {
+               color: $theme-color--five;
+          }
+
+          a:hover {
+               text-decoration: none;
+               color: $theme-color--five;
+          }
+          .navigation-menu > ul > li:hover > a span, .navigation-menu > ul > li.active > a span {
+               color: $theme-color--five;
+          }
+          .navigation-menu > ul > li:hover > a:after, .navigation-menu > ul > li.active > a:after {
+               color: $theme-color--five;
+          }
+          .navigation-menu > ul > li > a:before {
+               background-color:  $theme-color--five;
+          }
+          .submenu > li > a > span:after {
+               background-color: $theme-color--five;
+          }
+          .submenu > li > a:hover {
+               color: $theme-color--five;
+          }
+          .btn-lg-border {
+               &:hover {
+                    background: $theme-color--five;
+                    border: 2px solid $theme-color--five;
+               }
+          }
+          .ht-tab-menu-one button.is-checked {
+               color: $theme-color--five;
+          }
+          .single-blog-item .post-info .post-categories {
+               color: $theme-color--five;
+          }
+          .btn--border:hover {
+               background: $theme-color--five;
+               color: #fff;
+               border: 1px solid  $theme-color--five;
+          }
+          .blog-posttestimonial-inner-box {
+               background: $theme-color--five;
+          }
+          .sidebar-widget-title {
+               margin-bottom: 30px;
+               &::after {
+                    background: $theme-color--five;
+               }
+          }
+          .widget-tag .ht-btn:hover {
+               border: 1px solid $theme-color--five;
+               color: #fff;
+               background: $theme-color--five;
+          }
+          .video-btn--small {
+               color: $theme-color--five;
+          }
+          .widget-search .search-submit:hover {
+               color: $theme-color--five;
+          }
+          .menu-primary-menu-1 li.has-dropdown > a.is-visiable {
+               color: $theme-color--five;
+          }
+          .btn--black:hover {
+               background: $theme-color--five !important;
+          }
+     }
+     &--four {
+                
+          .la-loader.spinner1, .la-loader.spinner2, .la-loader.spinner3 [class*="bounce"], .la-loader.spinner4 [class*="dot"], .la-loader.spinner5 div {
+          background-color: $theme-color--four;
+          }
+          .submenu > li.active > a {
+               color: $theme-color--four;
+          }
+          a:hover {
+               text-decoration: none;
+               color: $theme-color--four;
+          }
+          input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus, select:focus, select:focus, textarea:focus {
+               color: $theme-color--four;
+               border-color: $theme-color--four;
+               background: transparent;
+          }
+          .navigation-menu > ul > li:hover > a span, .navigation-menu > ul > li.active > a span {
+               color: $theme-color--four;
+          }
+          .navigation-menu > ul > li:hover > a:after, .navigation-menu > ul > li.active > a:after {
+               color: $theme-color--four;
+          }
+          .navigation-menu > ul > li > a:before {
+               background-color:  $theme-color--four;
+          }
+          .submenu > li > a > span:after {
+               background-color: $theme-color--four;
+          }
+          .submenu > li > a:hover {
+               color: $theme-color--four;
+          }
+          .btn-lg-border {
+               &:hover {
+                    background: $theme-color--four;
+                    border: 2px solid $theme-color--four;
+               }
+          }
+          .ht-tab-menu-one button.is-checked {
+               color: $theme-color--four;
+          }
+          .single-blog-item .post-info .post-categories {
+               color: $theme-color--four;
+          }
+          .btn--border:hover {
+               background: $theme-color--four;
+               color: #fff;
+               border: 1px solid  $theme-color--four;
+          }
+          .blog-posttestimonial-inner-box {
+               background: $theme-color--four;
+          }
+          .sidebar-widget-title {
+               margin-bottom: 30px;
+               &::after {
+                    background: $theme-color--four;
+               }
+          }
+          .widget-tag .ht-btn:hover {
+               border: 1px solid $theme-color--four;
+               color: #fff;
+               background: $theme-color--four;
+          }
+          .video-btn--small {
+               color: $theme-color--four;
+          }
+          .widget-search .search-submit:hover {
+               color: $theme-color--four;
+          }
+          .menu-primary-menu-1 li.has-dropdown > a.is-visiable {
+               color: $theme-color--four;
+          }
+          .btn--black:hover {
+               background: $theme-color--four !important;
+          }
+          
+     }
+}
+.font-family-two {
+     body {
+          font-size: 20px;
+     }
+
+     h1, h2, h3, h4, h5, h6 {
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 1.41;
+     }
+     h1 {
+          font-size: 110px;
+          @media #{$desktop-device}{
+               font-size: 46px; 
+          }
+          @media #{$tablet-device}{
+               font-size: 40px;
+          }
+          @media #{$large-mobile}{
+               font-size: 34px;
+          }
+     }
+     h2 {
+          font-size: 66px;
+          @media #{$desktop-device}{
+               font-size: 36px; 
+          }
+          @media #{$tablet-device}{
+               font-size: 36px;
+          }
+          @media #{$large-mobile}{
+               font-size: 30px;
+          }
+          &.title-three {
+               font-size: 46px; 
+               @media #{$tablet-device}{
+                    font-size: 40px;
+               }
+               @media #{$large-mobile}{
+                    font-size: 34px;
+               }
+          }
+     }
+     h3 {
+          font-size: 36px;
+          @media #{$desktop-device}{
+               font-size: 32px; 
+          }
+          @media #{$tablet-device}{
+               font-size: 28px;
+          }
+          @media #{$large-mobile}{
+               font-size: 25px;
+          }
+     }
+     h4 {
+          font-size: 32px;
+          @media #{$desktop-device}{
+               font-size: 30px; 
+          }
+          @media #{$tablet-device}{
+               font-size: 28px;
+          }
+          @media #{$large-mobile}{
+               font-size: 24px;
+          }
+     }
+     h5 {
+          font-size: 24px;
+          @media #{$large-mobile}{
+               font-size: 20px;
+          }
+     }
+     h6 {
+          font-size: 18px;
+     }
+     p {
+          font-size: 20px;
+          @media #{$large-mobile}{
+               font-size: 16px;
+          }
+     }
+     
+
+}
+

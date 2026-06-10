@@ -1,0 +1,29 @@
+/*=============================================
+=            32. Career Css           =
+==============================================*/
+.single-featured-jobs {
+     border: 1px solid #ddd;
+     padding: 30px;
+     background: #fff;
+     .job-type {
+          margin-top: 10px;
+          font-size: 14px;
+          & a {
+               color: $theme-color--default;
+          }
+     }
+     .icon-list-items {
+          margin-top: 25px;
+          .icon-list-item {
+               font-size: 14px;
+               display: flex;
+               margin-bottom: 20px;
+               .list-icon {
+                    margin-top: 3px;
+                    font-size: 10px;
+                    color: $theme-color--default;
+                    margin-right: 10px;
+               }
+          }
+     }
+}

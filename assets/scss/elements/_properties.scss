@@ -1,0 +1,158 @@
+/*=========================================
+=       28. Properties Area Css          =
+===========================================*/
+
+.ht-tab-menu-one {
+    & li {
+        a {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.4em;
+            letter-spacing: -2px;
+            padding: 0 30px;
+            color: $body-text-color;
+            &.active {
+                color: $theme-color--default;
+            }
+            @media #{$desktop-device} {
+                font-size: 28px;
+                padding: 0 15px;
+            }
+            @media #{$tablet-device,$desktop-device} {
+                font-size: 24px;
+                padding: 0 15px;
+            }
+            @media #{$large-mobile} {
+                font-size: 22px;
+                padding: 0 15px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.ht-tab-menu-one {
+    & button {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.4em;
+        padding: 0 20px;
+        background: transparent;
+        border: none;
+        &.is-checked {
+            color: $theme-color--default;
+            font-weight: 700;
+        }
+        @media #{$large-mobile} {
+            padding: 0 12px;
+        }
+    }
+}
+
+.ht-tab-preview-menu {
+    & button {
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.4em;
+        padding: 3px 0px;
+        margin: 5px 20px 0;
+        background: transparent;
+        border: none;
+        border-bottom: 4px solid transparent;
+        &.is-checked {
+            border-bottom: 4px solid $theme-color--default;
+        }
+    }
+}
+
+.single-properties {
+    .properties-images {
+        display: block;
+        position: relative;
+    }
+    .listing__content-types {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .job-type {
+            background-color: #3377fa;
+            font-family: sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 12px;
+            padding: 7px 15px 5px;
+            vertical-align: middle;
+            line-height: 20px;
+            color: #fff;
+            &.for-sale {
+                background-color: $theme-color--four;
+            }
+        }
+    }
+}
+
+.properties-content {
+    padding: 40px 30px;
+    background: #212121;
+    .properties-location {
+        color: $white;
+        & i {
+            color: $theme-color--four;
+        }
+    }
+    .properties-price {
+        color: #75ad1c;
+        font-size: 28px;
+        letter-spacing: -1px;
+        margin: 0 0 5px;
+    }
+    .listing__content-metaitem {
+        display: inline-block;
+        margin-right: 30px;
+        i {
+            color: $theme-color--four;
+        }
+        .listing__content-metavalue {
+            color: $white;
+            margin-left: 5px;
+        }
+        @media #{$small-mobile} {
+            margin-right: 10px;
+        }
+    }
+    @media #{$small-mobile} {
+        padding: 30px 20px;
+    }
+}
+
+.apps-image-01 {
+    height: 400px;
+    width: auto;
+    background-size: cover;
+}
+
+.apps-img--1 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    &::before {
+        padding-top: 67.6%;
+        content: '';
+        display: block;
+    }
+}

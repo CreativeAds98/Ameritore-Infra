@@ -1,0 +1,299 @@
+/*=============================================
+=            30. Pricing table Css           =
+==============================================*/
+
+.pricing-table-wrapper{
+     margin-bottom: -30px;
+}
+.pricing-table-one {
+     & .pricing-table{
+          margin-bottom: 30px;
+          &__inner{
+               position: relative;
+               overflow: hidden;
+               transition: $transition--default;
+               text-align: center;
+               padding: 34px 40px 40px;
+               border: 1px solid #ddd;
+               border-radius: 0px;
+               background-color: $white;
+          }
+
+          &__header{
+               margin-bottom: 25px;
+               padding-bottom: 30px;
+               border-bottom: 1px solid #ddd;
+          }
+          
+          &__title{
+               margin-bottom: 10px;
+          }
+
+          &__price-wrap{
+               display: flex;
+               align-items: flex-start;
+               justify-content: center;
+               .price{
+                    font-size: 30px;
+                    line-height: .8;
+                    margin: 0 4px;
+                    font-weight: 700;
+                    color: #333;
+               }
+               .period{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    color: #ababab;
+                    align-self: flex-end;
+               }
+          }
+
+          &__list{
+               li{
+                    position: relative;
+                    display: block;
+                    padding: 5px 0;
+
+                    .featured{
+                    font-weight: 500;
+                    }
+               }
+          }
+
+          &__footer{
+               margin-top: 30px;
+               .ht-btn{
+                    width: 180px;
+                    max-width: 100%;
+                    &:hover {
+                    background: $theme-color--default;
+                    }
+               }
+          }
+
+          &__feature-mark {
+               position: absolute;
+               top: 0;
+               right: 1px;
+               height: auto;
+          }
+     }
+
+}
+
+.pricing-table-two {
+     & .pricing-table{
+          margin-bottom: 30px;
+          &__inner{
+               position: relative;
+               overflow: hidden;
+               transition: $transition--default;
+               padding: 34px 40px 40px;
+               border: 1px solid #ddd;
+               border-radius: 0px;
+               background-color: $white;
+          }
+
+          &__header{
+               margin-bottom: 25px;
+          }
+          
+          &__title{
+               margin-bottom: 10px;
+          }
+
+          &__price-wrap{
+               display: flex;
+               align-items: flex-start;
+               justify-content: flex-start;
+               margin-bottom: 20px;
+               .currency{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    color: #ababab;
+               }
+               .price{
+                    font-size: 50px;
+                    line-height: .8;
+                    margin: 0 4px;
+                    font-weight: 700;
+               }
+               .period{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    color: #ababab;
+                    align-self: flex-end;
+               }
+          }
+          p  {
+               font-size: 14px;
+          }
+
+     &__list{
+          li{
+               position: relative;
+               display: block;
+               padding: 7px 0;
+               i {
+                    margin-right: 10px;
+                    color: $theme-color--default;
+               }
+               .featured{
+               font-weight: 700;
+               &.item-excluded:after {
+                    content: 'hot';
+                    background-color: #ea622b;
+                    color: #fff;
+                    font-size: 11px;
+                    padding: 3px 8px;
+                    position: absolute;
+                    line-height: 1;
+                    top: -8px;
+               }
+               &.item-new:after {
+                    content: 'new';
+                    background-color: green;
+                    color: #fff;
+                    font-size: 11px;
+                    padding: 3px 8px;
+                    position: absolute;
+                    line-height: 1;
+                    top: -8px;
+               }
+               }
+          }
+     }
+
+     &__footer{
+          margin-top: 30px;
+          .ht-btn{
+               width: 180px;
+               max-width: 100%;
+               &:hover {
+               background: $theme-color--default;
+               }
+          }
+     }
+
+     &__feature-mark{
+          position: absolute;
+          top: 0;
+          right: 1px;
+          height: auto;
+          }
+     }
+}
+
+.pricing-table-three {
+     & .pricing-table{
+          margin-bottom: 30px;
+          &__inner{
+               position: relative;
+               overflow: hidden;
+               transition: $transition--default;
+               padding: 34px 40px 40px;
+               border: 1px solid #ddd;
+               border-radius: 0px;
+               background-color: $white;
+               text-align: center;
+          }
+
+          &__header{
+               margin-bottom: 25px;
+          }
+
+          &__title{
+               margin-bottom: 10px;
+          }
+
+          &__icon-box {
+               & * {
+                    max-width: 140px;
+                    max-height: 140px;
+                    margin: auto;
+               }
+          }
+          &__price-wrap{
+               display: flex;
+               align-items: flex-start;
+               justify-content: center;
+               margin: 20px 0;
+               .currency{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                    color: #ababab;
+               }
+               .price{
+                    font-size: 50px;
+                    line-height: .8;
+                    margin: 0 4px;
+                    font-weight: 700;
+          }
+          .period{
+               font-size: 15px;
+               margin-bottom: 0;
+               color: #ababab;
+               align-self: flex-end;
+          }
+     }
+     p  {
+          font-size: 14px;
+     }
+
+        &__list{
+            li{
+                position: relative;
+                display: block;
+                padding: 7px 0;
+                i {
+                     margin-right: 10px;
+                     color: $theme-color--default;
+                }
+                .featured{
+                    font-weight: 700;
+                    &.item-excluded:after {
+                         content: 'hot';
+                         background-color: #ea622b;
+                         color: #fff;
+                         font-size: 11px;
+                         padding: 3px 8px;
+                         position: absolute;
+                         line-height: 1;
+                         top: -8px;
+                    }
+                    &.item-new:after {
+                         content: 'new';
+                         background-color: green;
+                         color: #fff;
+                         font-size: 11px;
+                         padding: 3px 8px;
+                         position: absolute;
+                         line-height: 1;
+                         top: -8px;
+                    }
+               }
+          }
+     }
+
+     &__footer{
+          margin-top: 30px;
+          .ht-btn{
+               width: 180px;
+               max-width: 100%;
+               &:hover {
+                    background: $theme-color--default;
+               }
+          }
+     }
+
+     &__feature-mark{
+          position: absolute;
+          top: 0;
+          right: 1px;
+          height: auto;
+          }
+     }
+    
+}
+/*=====  End of pricing table  ======*/
+

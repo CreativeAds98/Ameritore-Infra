@@ -1,0 +1,102 @@
+
+/*=============================================
+=           07. Popup Search Css             =
+==============================================*/
+.offcanvas-search_wrapper {
+	.offcanvas-menu-inner {
+		background-color: rgba(0,0,0,.9);
+		width: 100%;
+          height: 100vh;
+		right: 0;
+		transform-origin: center;
+		visibility: visible;
+		opacity: 0;
+		top: 0;
+		position: absolute;
+		z-index: -99;
+		.btn-close {
+			background: transparent;
+			color: $white;
+			top: 65px;
+			right: 30px;
+			left: auto;
+			font-size: 40px;
+			color: $white;
+			position: absolute;
+			z-index: 44;
+			@media #{$large-mobile}{
+				top: 30px;
+			}
+		}
+		.offcanvas-search {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			transform: scale(0.5);
+			> span{
+				&.searchbox-info{
+					color: $white;
+					font-size: 20px;
+				}
+			}
+			.hm-searchbox {
+				position: relative;
+				transform-origin: top bottom;
+				width: calc(100% - 30px);
+				> input {
+					background-color: transparent;
+					border: 0;
+					border-bottom: 1px solid $white;
+					height: 100px;
+					line-height: 100px;
+					width: 100%;
+					padding: 0 50px 0 0;
+					color: $white;
+					transform-origin: top bottom;
+					text-align: center;
+					font-size: 30px;
+					&::placeholder {
+						color: $white;
+						text-align: center;
+					}
+					@media #{$large-mobile}{
+						height: 60px;
+						font-size: 20px;
+					}
+				}
+				> .search_btn {
+					position: absolute;
+					font-size: 30px;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 0;
+					border: 0;
+					background: transparent;
+					color: $white;
+					@media #{$large-mobile}{
+						font-size: 20px;
+					}
+					
+				}
+			}
+		}
+	}
+	&.open {
+		.offcanvas-menu-inner {
+			left: auto;
+			right: 0;
+			padding: 0;
+			transform: scale(1);
+			visibility: visible;
+			opacity: 1;
+			z-index: 999;
+			position: fixed;
+			width: 100%;
+			.offcanvas-search{
+				transform: scale(1);
+			}
+		}
+	}
+}

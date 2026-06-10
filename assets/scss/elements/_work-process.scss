@@ -1,0 +1,176 @@
+/*=========================================
+=          18. Work Process Css            =
+===========================================*/
+.single-process {
+     text-align: center;
+     background: $theme-color--default;
+     text-align: center;
+     height: 220px;
+     width: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 500px;
+     margin: auto;
+     @media #{$desktop-device,$tablet-device,$large-mobile}{
+          height: 170px;
+          width: 170px;
+     }
+     @media #{$large-mobile}{
+         margin-bottom: 30px;
+     } 
+     .process-box {
+          & .process-icon {
+             font-size: 42px;
+             color: $white;
+          }
+          .text {
+               & p {
+                    font-family: $font-family-two;
+                    font-weight: 600;
+                     @media #{$desktop-device,$tablet-device,$large-mobile}{
+                         font-size: 16px;
+                    }
+               }
+          }
+     }  
+
+     &::after {
+          position: absolute;
+          right: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "\ead0";
+          font-family: 'dliconoutline';
+          font-size: 45px;
+          color: $white;
+     }
+     @media #{$large-mobile,$tablet-device}{
+          &::after {display: none;}
+     } 
+}
+
+.workprocess-one {
+     .col-lg-3 {
+          &:last-child{   
+               .single-process {
+                    &::after {display: none;}
+               } 
+          }
+          @media #{$tablet-device}{
+               &:last-child{   
+                    .single-process {
+                         &::after {display: none;}
+                    } 
+               }
+          } 
+     }
+}
+.workprocess-three {
+     .col-lg-3{
+          &:last-child{   
+               .process-box {
+                    &::after {display: none;}
+               } 
+          }
+          @media #{$tablet-device}{
+               &:nth-child(2){
+                    .process-box {
+                         &::after {display: none;}
+                    } 
+               }
+          } 
+     }
+}
+
+
+.single-process {
+     &--two {
+          .process-icon {
+               font-size: 46px;
+               height: 118px;
+               width: 118px;
+               background-color: #212121;
+               color: $theme-color--four;
+               border-radius: 50%;
+               text-align: center;
+               line-height: 130px;
+               margin: auto;
+          }
+          & .process-content {
+               margin-top: 20px;
+               .title {
+                   font-weight: 600;
+                       font-size: 28px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-bottom: 8px;
+               } 
+               p {
+                    font-size: 20px;
+               }
+          }
+     }
+     &--three {
+          
+          .process-box {
+               position: relative;
+               &::after {
+                    position: absolute;
+                    right: -25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "\ead0";
+                    font-family: 'dliconoutline';
+                    font-size: 45px;
+                    color: $white;
+                    
+               }
+
+               @media #{$large-mobile}{
+                    &::after {display: none;}
+               } 
+
+               & .process-icon {
+                    text-align: center;
+                    background: $theme-color--four;
+                    text-align: center;
+                    height: 220px;
+                    width: 220px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 500px;
+                    margin: auto;
+                    position: relative;
+                    font-size: 68px;
+                    color: $white;
+                    &::before {
+                         content: '';
+                         border-top: 34px solid #ea622b;
+                         border-left: 34px solid transparent;
+                         border-right: 34px solid transparent;
+                         display: block;
+                         position: absolute;
+                         left: calc(50% - 34px);
+                         top: calc(100% - 8px);
+                    }
+                    @media #{$laptop-device}{
+                         height: 140px;
+                         width: 140px;
+                    }
+                    @media #{$desktop-device}{
+                         height: 140px;
+                         width: 140px;
+                    }
+               }
+               
+          }  
+          & .process-content {
+               margin-top: 50px;
+          }
+          @media #{$tablet-device,$large-mobile}{
+               margin-bottom: 30px;
+          }
+     }
+}

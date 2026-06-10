@@ -1,0 +1,374 @@
+/*=========================================
+=          22. Team Css               =
+===========================================*/
+
+
+.single-team-wrap {
+
+     .team-image-box {
+          display: block;
+          position: relative;
+          .team-image {
+               display: block;
+               img {
+                    width: 100%;
+               }
+          }
+
+          .default-overlay {
+               position: absolute;
+               height: 100%;
+               width: 100%;
+               top: 0;
+               left: 0;
+               &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: rgba(66,65,255,.9);
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+               }
+          }
+          .black-overlay {
+               position: absolute;
+               height: 100%;
+               width: 100%;
+               top: 0;
+               left: 0;
+               &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: rgba(0,0,0,.4);
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+               }
+          }
+
+          .team-link-icon {
+               position: absolute;
+               bottom: -10%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               opacity: 0;
+               visibility: hidden;   
+               transition: all 0.4s ease-in-out;
+               width: 100%;
+               text-align: center;
+               & .icon-box {
+                    background: transparent;
+                    width: 38px;
+                    height: 38px;
+                    line-height: 38px;
+                    color: #fff;
+                    margin: 5px;
+                    border-radius: 50%;
+                    text-align: center;
+                    font-size: 20px;
+                    border: 1px solid #fff;
+                    &:hover{
+                        background: $theme-color--default;
+                    }
+               }
+          }
+     }
+     & .team-member__content {
+          h6 {
+               text-transform: uppercase;
+          }
+          .author {
+               font-size: 12px;
+          }
+          .team-member__desc {
+               font-size: 16px;
+               line-height: 2em;
+          }
+          .boder-inner {
+               position: relative;
+               &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: "";
+                    width: 40px;
+                    height: 4px;
+                    background: #ddd;
+               }
+          }
+          .team-member__position {
+               span {
+                    font-size: 14px;
+               }
+          }
+          
+     }
+     &:hover {
+          & .default-overlay,
+          & .black-overlay  {
+               &::after {
+                    opacity: 1;
+               }
+          }
+          & .team-link-icon {
+               opacity: 1;
+               visibility: visible;
+               bottom: 0%;
+          }
+
+     }
+}
+.single-team--two {
+     margin-bottom: 40px;
+     overflow: hidden;
+     .team-image-box {
+          display: block;
+          position: relative;
+          .team-image {
+               display: block;
+               filter: grayscale(100);
+          }
+          .team-member__position {
+               position: absolute;
+               bottom: 0;
+               background: $theme-color--default;
+               padding: 6px 15px;
+               left: -100px;
+               opacity: 0;
+               transition: all 0.3s ease-in-out;
+               & span {
+                    color: #fff;
+               }
+          }
+     }
+     & .team-member__content {
+          .team-member__desc {
+               font-size: 16px;
+               line-height: 2em;
+          }
+     }
+     &:hover {
+          .team-image-box {
+               .team-image {
+                    filter: grayscale(0);
+               }
+          }
+          .team-member__position {
+               left: 0;
+               opacity: 1;
+          }
+
+     }
+}
+
+.single-team{
+     &--three {
+          .team-image-box {
+               display: block;
+               position: relative;
+               .team-image {
+                    display: block;
+                    filter: grayscale(100);
+                    & img {
+                         width: 100%;
+                    }
+               }
+               .default-overlay {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    &::after {
+                         position: absolute;
+                         left: 0;
+                         top: 0;
+                         background: rgba(0,0,0,.5);
+                         content: '';
+                         height: 100%;
+                         width: 100%;
+                         opacity: 0;
+                         transition: all 0.4s ease-in-out;
+                         transform: scale(0.95);
+                    }
+               }
+               .team-link-icon {
+                    position: absolute;
+                    bottom: -10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    visibility: hidden;   
+                    transition: all 0.4s ease-in-out;
+                    width: 100%;
+                    text-align: center;
+                    & .icon-box {
+                         background: transparent;
+                         width: 38px;
+                         height: 38px;
+                         line-height: 38px;
+                         color: #fff;
+                         margin: 5px;
+                         border-radius: 50%;
+                         text-align: center;
+                         font-size: 20px;
+                         border: 1px solid #fff;
+                         &:hover{
+                              background: $theme-color--default;
+                              border-color: $theme-color--default;
+                         }
+                    }
+               }
+               
+          & .team-member__content {
+               position: absolute;
+               bottom: 12%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               opacity: 0;
+               visibility: hidden;   
+               transition: all 0.4s ease-in-out;
+               width: 100%;
+               text-align: center;
+               opacity: 0;
+               overflow: hidden;
+               h6 {
+                    text-transform: uppercase;
+                    color: #fff;
+               }
+               .team-member__position {
+                    font-size: 16px;
+                    line-height: 2em; 
+                    span {
+                         color: #fff;
+                    }
+               }
+          }
+          }
+          &:hover {
+               .team-image-box {
+                    .team-image {
+                         filter: grayscale(0);
+                    }
+               }
+               & .default-overlay  {
+                    &::after {
+                         opacity: 1;
+                         transform: scale(1);
+                    }
+               }
+               .team-member__content {
+                    opacity: 1;
+                    visibility: visible;
+                    h6 {
+                         animation-duration: .5s;
+                         animation-name: m1ServicesIn;
+                    }
+                    .team-member__position{
+                         animation-duration: .6s;
+                         animation-name: m1ServicesIn;
+                    }
+               }
+               & .team-link-icon {
+                    opacity: 1;
+                    visibility: visible;
+                    bottom: 0%;
+               }
+          }
+     }
+}
+
+.single-agents {
+     margin-top: 30px;
+     .agents-image {
+          display: block;
+          position: relative;
+          &::after {
+               position: absolute;
+               left: 0;
+               top: 0;
+               height: 100%;
+               width: 100%;
+               background: rgba(117,173,28,.9);
+               content: '';
+               transition: all 0.3s ease-in-out;
+               opacity: 0;
+          }
+     }
+     &:hover {
+          .agents-image {
+               &::after {
+                    opacity: 1;
+               }
+          }
+     }
+     .agents-content {
+          padding: 30px;
+          background-color: #fff;
+          & .title {
+               font-weight: 600;
+               margin-bottom: 6px;
+          }
+          .team-member__position {
+               color: $theme-color--five;
+               font-size: 12px;
+          }
+          .team-member__contact-info {
+               & li {
+                    margin-top: 10px;
+                    
+                    i {
+                         height: 30px;
+                         width: 30px;
+                         border: 1px solid #ddd;
+                         line-height: 30px;
+                         text-align: center;
+                         border-radius: 5000px;
+                    }
+                    span {
+                         margin-left: 10px;
+                    }
+                         
+               }
+          }
+          .member-social  {
+               margin-top: 20px;
+               & a {
+                    margin-right: 15px;
+                    &:hover {
+                         color: $theme-color--five;
+                    }
+               }
+          }
+     }
+}
+
+.agents-slider-1 {
+     .slick-dots {
+          margin-top: 30px;
+          text-align: center;
+          li {
+               display: inline-block;
+               margin: 5px;
+               button {
+                    background: #ddd;
+                    font-size: 0;
+                    border:  none;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 100%;
+               }
+               &.slick-active {
+                    button {
+                         background: $theme-color--five;
+                    }
+               }
+          }
+     }
+}

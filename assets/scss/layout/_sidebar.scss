@@ -1,0 +1,213 @@
+/*=======================================
+=            14. Sidebar Css           =
+=========================================*/
+
+.sidebar-widget + .sidebar-widget {
+    margin-top: 60px;
+}
+.sidebar-widget-title {
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 25px;
+    &::after {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         content: '';
+         height: 4px;
+         width: 40px;
+         background: $theme-color--default;
+
+    }
+}
+
+.widget-search {
+    position: relative;
+    & input {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 0px;
+        padding: 3px 20px;
+        padding-right: 20px;
+        height: 46px;
+        color: #333;
+        font-size: 15px;
+        font-weight: 400;
+        padding-right: 72px;
+        
+    }
+    .search-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        background: none;
+        box-shadow: none;
+        transform: none;
+        &:hover {
+            color: $theme-color--default;
+        }
+    }
+}
+
+.widget-blog-recent-post {
+     & ul {
+          & li {
+               margin-bottom: 15px;
+               font-size: 14px;
+          }
+             
+     }
+
+}
+
+.widget-blog-categories-post {
+     & ul {
+          & .single-categories-post {
+               display: flex;
+               border-bottom: 1px solid #ddd;
+               margin-bottom: 20px;
+               padding-bottom: 20px;
+               .pr-item-left-img {
+                    display: block;
+                    max-width: 110px;
+               }
+               .pr-item--right {
+                    margin-left: 15px;
+                    h6 {
+                         font-size: 14px;
+                         font-weight: 600;
+                    }
+                    span {
+                         font-size: 12px;
+                    }
+               }
+          }
+     }
+
+}
+
+.select-down {
+     border: 1px solid #ddd;
+     border-radius: 0;
+     font-size: 14px;
+     background: transparent url("../images/icons/selector-icon.png") no-repeat center right 20px;
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     &:focus {
+        background: transparent url("../images/icons/selector-icon.png") no-repeat center right 20px !important;
+     }
+}
+
+.widget-tag {
+     & .ht-btn {
+          color: #333; 
+          background: transparent;
+          margin-right: 5px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid #ddd;
+          font-size: 12px;
+          padding: 4px 10px;
+          &:hover {
+               border: 1px solid $theme-color--default;
+               color: #fff;
+               background: $theme-color--default;
+          }
+     }
+}
+
+.widget-product-item {
+     overflow: hidden;
+     margin-bottom: 20px;
+     & .thumbnail {
+        max-width: 150px;
+        float: left;
+        margin-right: 20px;
+        margin-left: 0;
+        width: 80px;
+     }
+    & .info {
+        & .product-title {
+            font-weight: 400;
+            font-size: 16px;
+        }
+        & .star-rating {
+            & a {
+                display: inline-block;
+                color: #ffb805;
+                line-height: 1;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+        & .price-box {
+            margin-top: 5px;
+            & .old-price {
+                font-size: .88em;
+                font-weight: 400;
+                color: #b6b7d2;
+                text-decoration: line-through;
+            } 
+            & .new-price {
+                font-size: 14px;
+                font-weight: 500;
+                color: #6d70a6;
+            } 
+        }
+     }
+}
+
+
+/*=====  End of Sidebar  ======*/
+
+// Shop Sidebar Css
+
+
+.shop-widget {
+     margin-bottom: 40px;
+     .shop-widget-title {
+          margin-bottom: 20px;
+          font-weight: 600;
+     }
+}
+
+.widget-shop-categories {
+     ul {
+          li {
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 15px;
+               font-size: 14px;
+               &:last-child {
+                    margin-bottom: 0;
+               }
+          }
+     }
+}
+.widget-nav-list {
+     li {
+          position: relative;
+          margin-bottom: 8px;
+          padding: 8px 0;
+          width: 49%;
+          display: inline-block;
+          font-size: 14px;
+          &:last-child {
+               margin-bottom: 0;
+          }
+     }
+}
+.shop-tag {
+     & a {
+          font-size: 14px;
+     }
+}

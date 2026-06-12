@@ -179,7 +179,7 @@
     margin-top: 70px;
 }
 .slider-img-2{
-    background-image: url('..//images/project/hero1.png') !important;
+    background-image: url('..//images/project/hero9.png') !important;
     margin-top: 70px;
 }
 .slider-img-3{
@@ -196,6 +196,18 @@
     background-image: url('..//images/project/hero7.png') !important;
     margin-top: 70px;
 }
+
+.slider-img-6{
+    background-image: url('..//images/project/hero10.png') !important;
+    margin-top: 70px;
+}
+
+.slider-img-7{
+    background-image: url('..//images/project/hero11.png') !important;
+    margin-top: 70px;
+}
+
+.schneider-electric
 .get-quote-btn .btn:hover{
     background-color: #2424a5 !important;
     color: white !important;

@@ -181,30 +181,42 @@
 .slider-img-2{
     background-image: url('..//images/project/hero9.png') !important;
     margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 .slider-img-3{
     background-image: url('..//images/project/hero6.png') !important;
     margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .slider-img-4{
     background-image: url('..//images/project/hero8.png') !important;
     margin-top: 70px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .slider-img-5{
-    background-image: url('..//images/project/hero7.png') !important;
+    background-image: url('..//images/project/hero5.png') !important;
     margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .slider-img-6{
     background-image: url('..//images/project/hero10.png') !important;
     margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .slider-img-7{
     background-image: url('..//images/project/hero11.png') !important;
     margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 .schneider-electric

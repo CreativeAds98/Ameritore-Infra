@@ -219,6 +219,15 @@
     background-repeat: no-repeat !important;
 }
 
+.slider-img-8{
+    background-image: url('..//images/project/hero12.png') !important;
+    margin-top: 70px;
+        background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+
+}
+
+
 .schneider-electric
 .get-quote-btn .btn:hover{
     background-color: #2424a5 !important;
